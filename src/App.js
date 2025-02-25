@@ -13,13 +13,20 @@ class App extends React.Component{  //component
     this.state = {
       title: 'hello counter...'
     }
+    // this.handleSetTitle = this.handleSetTitle.bind(this)  //|..|
   }
 
-  handleSetTitle = ()=>{
+  handleSetTitle = ()=>{  //event handler
     this.setState({
       title: "کدیاد"
     })
   }
+  // ==
+  // handleSetTitle(){  //|..|
+  //   this.setState({
+  //     title: "کدیاد"
+  //   })
+  // }
 
   render(){
     return(
