@@ -15,13 +15,19 @@ class App extends React.Component{  //component
     }
   }
 
+  handleSetTitle = ()=>{
+    this.setState({
+      title: "کدیاد"
+    })
+  }
+
   render(){
     return(
       // * class --> className
       // حتما باید یک تگ باز و بسته باشد. میتواند تگ بی نام باشد
       <div className='main'>  
         <Text title = {this.state.title}/> 
-        <Timer/>
+        <Timer handleSetTitle = {this.handleSetTitle}/>
       </div>
 
       // <>    با بالا برابر است

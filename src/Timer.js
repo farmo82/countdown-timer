@@ -35,9 +35,12 @@ class Timer extends React.Component{  //component
   
     render(){
       return(
-        <h2 className='timer'>
-          {this.state.time}
-        </h2>
+        <>
+          <h2 className='timer'>
+            {this.state.time}
+          </h2>
+          <button onClick={this.props.handleSetTitle}>click</button>
+        </>
       )
     }
   }
